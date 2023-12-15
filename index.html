@@ -178,6 +178,7 @@ function cetak(s,shee){
         ctxts.textAlign="center";
         ctxts.font = "bold 28pt Lato";
         ctxts.fillText(data['BARCODE'], ts.width/2, ts.height*0.3);
+        ctxts.fillText(data['JENIS MESIN'], ts.width/2, ts.height*0.7);
         ctxts.fillRect(ts.width*0.1,ts.height/2,ts.width*0.8,3);
         $("#lato-"+shee).append(ts);
 
@@ -259,6 +260,9 @@ function cetak(s,shee){
         ctxwims.font = "bold 28pt Lato";
         ctxwims.fillText(data['WIMS'], wims.width/2, wims.height/2);
         $("#lato-"+shee).append(wims);
+
+
+          
       });
   }
 
